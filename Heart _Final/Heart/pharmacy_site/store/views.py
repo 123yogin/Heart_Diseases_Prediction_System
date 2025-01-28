@@ -9,6 +9,9 @@ from django.contrib.auth import authenticate, login
 
 from django.contrib import messages
 
+def cover_page(request):
+    return render(request, 'store/cover.html')
+
 def firstpg(request):
     return render(request, 'store/firstpg.html')
 
@@ -262,3 +265,4 @@ def last_consultation(request):
 
 def fectors(request):
     return render(request, 'store/fectors.html')
+
